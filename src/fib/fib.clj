@@ -1,9 +1,9 @@
 (ns fib.fib)
 
 (defn fib [n]
-  (loop [prev   0
-         next   1
-         result 1
+  (loop [prev   (bigint 0)
+         next   (bigint 1)
+         result (bigint 1)
          i      1]
     (cond
      (= 0 n)   0
@@ -12,7 +12,7 @@
                  (recur next (+ prev next) (+ prev next) (inc i))))))
 
 (defn fib-seq [n]
-  (loop [result [0]
+  (loop [result [(bigint 0)]
          i      0]
     (if (= i n)
       result
