@@ -8,3 +8,10 @@
     (if (= i n)
       result
       (recur next (+ prev next) (+ prev next) (inc i)))))
+
+(defn fib-seq [n]
+  (loop [result []
+         i      0]
+    (if (= i n)
+      result
+      (recur (conj result (fib (inc i))) (inc i)))))
