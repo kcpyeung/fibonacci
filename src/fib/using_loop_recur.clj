@@ -1,4 +1,4 @@
-(ns fib.fib)
+(ns fib.using-loop-recur)
 
 (defn fib [n]
   (loop [prev   (bigint 0)

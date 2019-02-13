@@ -1,6 +1,6 @@
-(ns fib.fib-test
+(ns fib.using-loop-recur-test
     (:require [clojure.test :refer :all]
-              [fib.fib :refer :all]))
+              [fib.using-loop-recur :refer :all]))
 
 (deftest fibonacci
   (testing "0"
